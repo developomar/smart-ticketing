@@ -22,10 +22,6 @@
         }
         .font-raleyway {
             font-family: "Raleway", sans-serif;
-            
-
-
-
         }
     </style>
 </head>
@@ -227,7 +223,7 @@
                 <!-- ---------seat information section------------ -->
                 <div class="md:p-8 p-4 flex justify-between lg:flex-row flex-col gap-8 bg-[#FFF] mt-8">
                      <!-- passenger seat section -->
-                    <div class="lg:w-[60%] pr-4 lg:border-r-[2px] border-dashed border-b-[#03071233">
+                    <div class="lg:w-[60%] lg:pr-4 lg:border-r-[2px] border-dashed border-b-[#03071233">
                        <h3 class="font-raleyway text-[#030712] text-[1.5rem] font-semibold border-b-[1px] border-dashed border-b-[#03071233] pb-4">Select Your Seat</h3>
                        <div class="flex justify-between sm:flex-row flex-col gap-5 border-b-[1px] border-dashed border-b-[#03071233] py-4">
                         <div class="flex items-center gap-3 ">
@@ -321,9 +317,55 @@
                     </div>
     
                     <!-- payment section for seat -->
-                    <div class="lg:w-[40%] pl-8">
+                    <div class="lg:w-[40%] lg:pl-8  font-inter">
                         <h3 class="font-raleyway text-[#030712] text-[1.5rem] font-semibold border-b-[1px] border-dashed border-b-[#03071233] pb-4">Payment for your seat</h3>
-    
+                        
+                        <!-- payment infomation -->
+                        <div class="bg-[#F7F8F8] rounded-xl md:p-8 p-4 mt-6">
+                            <div class="flex justify-between pb-4 border-b-[1px] border-dashed border-b-[#03071233]">
+                                <p class="text-[#030712] font-medium">Seat <span class="text-[#FFF] px-2 bg-[#1DD100] rounded-lg">0</span></p>
+                                <p class="text-[#030712] font-medium">Class</p>
+                                <p class="text-[#030712] font-medium">Price</p>
+                            </div>
+
+                            <div class="mt-4 flex justify-between pb-4 border-b-[1px] border-solid border-b-[#03071233]">
+                                <p class="text-[#03071280]">C2</p>
+                                <p class="text-[#03071280]">Economy</p>
+                                <p class="text-[#03071280]">550</p>
+                            </div>
+
+                            <div class="mt-4 flex justify-between">
+                                <p class="text-[#030712] font-medium">Total Price</p>
+                                <p class="text-[#030712] font-medium">BDT <span>0</span></p>
+                            </div>
+
+                            <div class="p-2 bg-[#FFF] rounded-lg gap-4 mt-4 flex justify-between sm:flex-row flex-col">
+                                <input type="text" placeholder="Have any copupon?" class="outline-0">
+                                <button class="py-2 px-4 bg-[#1DD100] rounded-xl font-raleyway md:text-[1.25rem] text-[1rem] text-[#FFF] md:font-bold font-semibold">Apply</button>
+                            </div>
+
+                            <div class="mt-4 flex justify-between">
+                                <p class="text-[#030712] font-medium">Grand Total</p>
+                                <p class="text-[#030712] font-medium">BDT <span>0</span></p>
+                            </div>
+
+                        </div>
+
+                        <!-- passenger information -->
+                        <div class="flex flex-col gap-4 mt-4 text-[#030712] font-semibold">
+                            <label for="name" class="">Passenger Names<sup>*</sup></label><input type="text" name="" id="" placeholder="Enter your Name" class="sm:p-6 p-3 border-[1px] border-solid border-[#0307121a] outline-none rounded-xl font-normal">
+
+                            <label for="number">Phone Number<sup>*</sup></label><input type="number" name="" id="" placeholder="Enter your phone number" class="sm:p-6 p-3 border-[1px] border-solid border-[#0307121a] outline-none rounded-xl font-normal">
+
+                            <label for="email">Email ID<sup>*</sup></label><input type="email" name="" id="" placeholder="Enter your email id" class="sm:p-6 p-3 border-[1px] border-solid border-[#0307121a] outline-none rounded-xl font-normal">
+
+                            <button class="py-2 px-4 bg-[#1DD100] rounded-xl font-raleyway md:text-[1.25rem] text-[1rem] text-[#FFF] md:font-bold font-semibold">Next</button>
+                        </div>
+
+                        <div class="mt-6 text-[#03071299] underline flex justify-evenly sm:flex-row flex-col text-center ">
+                            <p>Terms and Conditions</p>
+                            <p>Cancellation Policy</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -331,7 +373,7 @@
     </main>
 
     <!-- -------------------footer section-------------------- -->
-    <footer></footer>
+    <footer style="color: #03071299;"></footer>
 
 
     <!-- ---------------------scripts section------------------- -->
