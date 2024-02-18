@@ -22,7 +22,10 @@
         }
         .font-raleyway {
             font-family: "Raleway", sans-serif;
-            color: #03071299;
+
+
+
+
         }
     </style>
 </head>
@@ -52,7 +55,7 @@
             <!-- ------------responsive menu section------------------- -->
             <button onclick=" responsiveButtonOpen ()"  class="md:hidden"><i class="fa-solid fa-bars"></i></button>
 
-            <div id="responsive-menu" class="flex justify-between sm:w-[300px] w-[50%] h-[250px] items-start absolute top-5 right-0 p-3 bg-[#ffffff3a] backdrop-blur-[8px] border-[1px] shadow-xl hidden">
+            <div id="responsive-menu" class="flex justify-between sm:w-[300px] w-[50%] h-[250px] items-start absolute top-5 right-0 p-3 bg-[#1dd1001a] backdrop-blur-[8px] border-[1px] shadow-xl hidden">
                 <ul class="">
                     <li class="border-b-[1px] py-4">
                         <a href="">Search <i class="fa-solid fa-magnifying-glass ml-1"></i></a>
@@ -160,8 +163,65 @@
                 </div>
 
                 <!-- ---------ticket information section---------- -->
-                <div>
-                    
+                <div class="md:p-8 p-4 bg-[#FFF] rounded-3xl flex gap-8 justify-between lg:flex-row flex-col ">
+                    <!-- travel information section -->
+                    <div class="lg:w-[70%] w-full">
+                        <div class="flex justify-between items-center md:flex-row flex-col gap-8 mb-8">
+                            <div class="flex gap-4 items-center">
+                                <div><img src="images/bus-logo.png" alt=""></div>
+                                <div>
+                                    <h3 class="font-raleyway md:text-[2rem] text-[1.5rem] text-[#030712] font-bold">Greenline Paribahan</h3>
+                                    <p class="font-inter text-[#03071299] text-[1.125rem] font-normal">Coach-009-WEB ! AC_Business</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-4 bg-[#1dd10026] px-4 py-3 rounded-lg">
+                                <img src="images/seat-green.png" alt="">
+                                <p class="text-[#1DD100] font-inter text-[1.125rem] font-medium">40 Seats left</p>
+                            </div>
+                        </div>
+                        <div class="bg-[#F7F8F8] rounded-3xl md:p-8 p-4 lg:border-b-0 border-b-[2px] border-dashed border-[#1DD100]">
+                            <div class="flex flex-col">
+                                <div class="flex justify-between py-5 border-b-[1px] border-dashed border-b-[#03071233] font-raleyway">
+                                    <div>
+                                        <p class="font-inter text-[#03071299] text-[1.125rem] font-normal">Route</p>
+                                    </div>
+                                    <div><select name="" id="" class="appearance-none border-0 outline-0">
+                                        <option selected value="">Dhaka-Sylhet</option>
+                                        <option value="">Dhaka-Natore</option>
+                                    </select></div>
+                                </div>
+
+                                <div class="flex justify-between py-5  border-b-[1px] border-dashed border-b-[#03071233] font-raleyway">
+                                    <div>
+                                        <p class="font-inter text-[#03071299] text-[1.125rem] font-normal">Departure Time</p>
+                                    </div>
+                                    <div>
+                                        <select name="" id="" class="appearance-none border-0 outline-0">
+                                            <option selected value="">9:00 PM</option>
+                                            <option value="">11:00 PM</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="mt-8 flex justify-between gap-5 md:flex-row flex-col">
+                                <button class="font-inter text-[#030712cc] font-bold lg:text-[1rem] text-[0.8rem] lg:p-4 p-2 bg-[#0307120d] rounded-xl">Boarding Point - Laxmipur</button>
+                                <button class="font-inter text-[#030712cc] font-bold lg:text-[1rem] text-[0.8rem] lg:p-4 p-2 bg-[#0307120d] rounded-xl">Dropping Point - Bogura</button>
+                                <button class="font-inter text-[#030712cc] font-bold lg:text-[1rem] text-[0.8rem] lg:p-4 p-2 bg-[#0307120d] rounded-xl">Est. Time - 11 Hour</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!--info devider -->
+                    <div class="lg:block hidden">
+                        <img src="images/info-devider.png" alt="">
+                    </div>
+
+                    <!-- ticket price section -->
+                    <div class="font-raleyway flex flex-col justify-center items-center">
+                        <img src="images/fare.png" alt="">
+                        <p class="md:text-[2rem] text-[1.5rem] font-bold">550 Taka</p>
+                        <p class="md:text-[1.5rem] text-[1rem]  text-[#03071299]">Per Seat</p>
+                    </div>
                 </div>
             </div>
         </section>
