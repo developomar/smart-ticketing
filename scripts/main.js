@@ -30,14 +30,29 @@ function handleButtonClick(index) {
     setElementTextByID('total-seat', totalSeat)
 
 
-
   clickedCount++;
 
+
   if (clickedCount === 1) {
-    
     const totalPaymentElement = 550;
     setElementTextByID ('total-price', totalPaymentElement);
     setElementTextByID ('grand-total-price', totalPaymentElement);
+
+    // number input field scripts
+    const inputField = document.getElementById('phone-number');
+    const nextButton = document.getElementById('next-button');
+    inputField.addEventListener('input', function(){
+        if ((clickedCount ===1 || clickedCount === 2 || clickedCount === 3 || clickedCount === 4) && !isNaN(inputField.value) && inputField.value !== '') {
+            nextButton.removeAttribute('disabled');
+
+        }
+
+        else {
+            nextButton.setAttribute('disabled', 'true');
+        }
+    })
+
+
   }
 
   else if (clickedCount === 2) {
@@ -131,3 +146,28 @@ allButtons.forEach((button, index) => {
             couponButton.innerText = 'Coupon code applied succesfully';
         }
     }, { once: true })
+
+    // passenger info succes message scripts
+
+    document.getElementById('next-button').addEventListener('click', function(){
+        const headerElement = document.getElementById('header');
+        headerElement.classList.add('hidden')
+
+        const offerSection = document.getElementById('offer');
+        offerSection.classList.add('hidden');
+
+        const ticketSection = document.getElementById('ticket');
+        ticketSection.classList.add('hidden');
+
+        const footerSection = document.getElementById('footer');
+        footerSection.classList.add('hidden');
+
+        const succesSection = document.getElementById('success');
+        succesSection.classList.remove('hidden');
+
+       
+
+    })
+    
+
+    
